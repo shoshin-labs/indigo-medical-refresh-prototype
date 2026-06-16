@@ -11,7 +11,7 @@ for (const form of document.querySelectorAll('[data-demo-form]')) {
     event.preventDefault();
     const status = form.querySelector('[data-form-status]');
     if (status) {
-      status.textContent = 'Demo only: this prototype would hand the enquiry to the practice team and show confirmation here.';
+      status.textContent = 'Thank you. In a live version, your enquiry would now be sent securely to the practice team.';
     }
   });
 }

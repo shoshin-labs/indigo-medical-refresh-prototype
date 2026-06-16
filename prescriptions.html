@@ -3,59 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prescriptions — Indigo Medical refresh prototype</title>
-  <meta name="description" content="A clearer prescriptions page concept for Indigo Medical.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <title>Prescriptions — Indigo Medical</title>
+  <meta name="description" content="A clearer repeat prescription and medication guidance page for Indigo Medical patients.">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-links">
+        <span>Call: <a href="tel:01534730541">01534 730541</a></span>
+        <span>Email: <a href="mailto:indigomedical@indigo.gpnet.je">indigomedical@indigo.gpnet.je</a></span>
+      </div>
+      <div class="utility-note">Urgent help when closed: JDOC <strong>01534 445445</strong></div>
+    </div>
+  </div>
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand-mark" href="index.html" aria-label="Indigo Medical prototype home">
+      <a class="brand-mark" href="index.html" aria-label="Indigo Medical home">
         <div class="brand-badge">I</div>
-        <div class="brand-copy">Indigo Medical <small>Prescriptions prototype</small></div>
+        <div class="brand-copy">Indigo Medical <small>Family medicine across Jersey</small></div>
       </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
-        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-        <a class="nav-cta" href="review.html">Review</a>
+        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="prescriptions.html">Prescriptions</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+        
       </nav>
     </div>
   </header>
   <main id="main">
-    <section class="page-hero"><div class="container page-hero-card"><div class="breadcrumbs"><a href="index.html">Home</a> / <span>Prescriptions</span></div><span class="eyebrow">Prescriptions page concept</span><h1>Make prescription requests clearer, calmer, and more task-specific.</h1><p>The public Indigo Medical site already separates prescription information, but this refreshed concept would present the pathways more cleanly: new prescriptions, repeat prescriptions, digital ordering, and patient messaging.</p></div></section>
+    <section class="page-hero"><div class="container page-hero-card"><div class="breadcrumbs"><a href="index.html">Home</a> / <span>Prescriptions</span></div><span class="eyebrow">Prescriptions</span><h1>Medication support without the confusion.</h1><p>Patients often need to know whether they are ordering a repeat prescription, asking about a medication review, or checking what happens next. Grouping these routes more clearly reduces avoidable calls and uncertainty.</p></div></section>
     <section class="section"><div class="container grid-2">
-      <article class="content-block"><span class="eyebrow">New prescriptions</span><h2>Explain the route for first-time requests</h2><p>Patients should understand quickly whether a prescription needs a consultation, review, or follow-up from the practice team.</p></article>
-      <article class="content-block"><span class="eyebrow">Repeat prescriptions</span><h2>Make repeat ordering the simplest pathway</h2><p>For repeat items, the page can encourage the fastest route available, including Patient Access where appropriate.</p></article>
+      <article class="content-block featured"><span class="eyebrow">Repeat prescriptions</span><h2>Make repeat ordering the clearest path</h2><p>Repeat medication should feel like a straightforward service. The page can direct suitable patients to the fastest route available, including Patient Access where appropriate.</p><div class="actions"><a class="btn btn-primary" href="patient-access.html">Use Patient Access</a></div></article>
+      <article class="content-block"><span class="eyebrow">New prescriptions</span><h2>Explain when an appointment is needed</h2><p>Patients should understand quickly whether a new medication request requires a GP review, a nurse appointment, or another clinician-led follow-up first.</p></article>
     </div></section>
     <section class="section"><div class="container grid-3">
-      <article class="service-card"><h3>Patient Access ordering</h3><p>Explain clearly how online prescription ordering works and when it is the fastest option.</p></article>
-      <article class="service-card"><h3>Messaging and updates</h3><p>Where AccuRx or SMS messaging is used, explain what messages patients may receive and what actions they may be asked to take.</p></article>
-      <article class="service-card"><h3>Safety and expectations</h3><p>Use short guidance on timing, collection, review intervals, and when a medication query needs clinician support instead of a form submission.</p></article>
+      <article class="service-card"><h3>Ordering online</h3><p>Explain how online repeat requests work and which patients will find this the easiest route.</p></article>
+      <article class="service-card"><h3>Medication reviews</h3><p>Let patients know when medicines need review and when the practice may ask them to book before issuing further repeats.</p></article>
+      <article class="service-card"><h3>Queries and timing</h3><p>Use short guidance on turnaround times, collection expectations and when a medication query is better handled by phone.</p></article>
     </div></section>
-
+    <section class="section"><div class="container quote-card"><span class="eyebrow">Why it matters</span><h2>A prescription page should lower friction, not add it.</h2><p>When people are ordering regular medication they want clarity, speed and confidence. Cleaner routes and shorter copy make the service feel more organised and easier to trust.</p></div></section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <div class="brand-mark">
           <div class="brand-badge">I</div>
-          <div class="brand-copy">Indigo Medical <small>Refresh prototype and review pack</small></div>
+          <div class="brand-copy">Indigo Medical <small>Care that feels personal</small></div>
         </div>
-        <p>This prototype is a task-focused redesign concept based on Indigo Medical’s public site structure, intended to show how patient journeys could feel clearer, more modern, and more confidence-inspiring.</p>
+        <p>General practice and family medicine across Jersey, with clearer routes for appointments, prescriptions, registration and getting in touch.</p>
       </div>
       <div>
-        <strong>Patient journey pages</strong>
-        <ul><li><a href="index.html">Homepage</a></li><li><a href="appointments.html">Appointments</a></li><li><a href="patient-access.html">Patient Access</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register</a></li></ul>
+        <strong>Patient services</strong>
+        <ul><li><a href="appointments.html">Appointments</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register with us</a></li><li><a href="patient-access.html">Patient Access</a></li></ul>
       </div>
       <div>
-        <strong>Practice pages</strong>
-        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Surgeries</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
+        <strong>Practice information</strong>
+        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Our surgeries</a></li><li><a href="team.html">Medical team</a></li><li><a href="contact.html">Contact us</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
       </div>
     </div>
     <div class="container small-print">Exploratory concept only — not an official Indigo Medical website. Public information has been reorganised here for review and prototype purposes.</div>

@@ -3,64 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patient Access — Indigo Medical refresh prototype</title>
-  <meta name="description" content="A simplified Patient Access onboarding concept for Indigo Medical.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <title>Patient Access — Indigo Medical</title>
+  <meta name="description" content="A simpler, more reassuring Patient Access onboarding page for Indigo Medical patients.">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-links">
+        <span>Call: <a href="tel:01534730541">01534 730541</a></span>
+        <span>Email: <a href="mailto:indigomedical@indigo.gpnet.je">indigomedical@indigo.gpnet.je</a></span>
+      </div>
+      <div class="utility-note">Urgent help when closed: JDOC <strong>01534 445445</strong></div>
+    </div>
+  </div>
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand-mark" href="index.html" aria-label="Indigo Medical prototype home">
+      <a class="brand-mark" href="index.html" aria-label="Indigo Medical home">
         <div class="brand-badge">I</div>
-        <div class="brand-copy">Indigo Medical <small>Patient Access prototype</small></div>
+        <div class="brand-copy">Indigo Medical <small>Family medicine across Jersey</small></div>
       </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
-        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-        <a class="nav-cta" href="review.html">Review</a>
+        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="prescriptions.html">Prescriptions</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+        
       </nav>
     </div>
   </header>
   <main id="main">
-    <section class="page-hero"><div class="container page-hero-card"><div class="breadcrumbs"><a href="index.html">Home</a> / <span>Patient Access</span></div><span class="eyebrow">Online access redesign</span><h1>Explain Patient Access like a service, not a policy document.</h1><p>The current process can feel administrative and fragmented. This concept turns it into a short, reassuring journey that tells patients what it is, why it helps, what they need, and what happens next.</p></div></section>
+    <section class="page-hero"><div class="container page-hero-card"><div class="breadcrumbs"><a href="index.html">Home</a> / <span>Patient Access</span></div><span class="eyebrow">Patient Access</span><h1>Online access explained simply.</h1><p>Patients should be able to understand what Patient Access is for, how to get started, and what to do if they need help — without wading through administrative language.</p></div></section>
     <section class="section"><div class="container grid-3">
-      <article class="info-card"><div class="icon-badge">A</div><h3>What is it for?</h3><p>Booking supported appointments, managing repeat prescriptions, and handling routine practice tasks more conveniently online.</p></article>
-      <article class="info-card"><div class="icon-badge">B</div><h3>Who is it for?</h3><p>Existing patients who want a straightforward digital route for routine tasks and easier access to practice services.</p></article>
-      <article class="info-card"><div class="icon-badge">C</div><h3>What should be clearer?</h3><p>What “book on the day” means, what ID is needed, how access details are issued, and how long setup is likely to take.</p></article>
+      <article class="info-card"><div class="icon-badge">A</div><h3>What can I use it for?</h3><p>Use Patient Access for supported routine tasks such as online appointments and repeat prescriptions where available.</p></article>
+      <article class="info-card"><div class="icon-badge">B</div><h3>Who is it for?</h3><p>Existing patients who want a digital route for straightforward practice tasks without having to call every time.</p></article>
+      <article class="info-card"><div class="icon-badge">C</div><h3>What should be clearer?</h3><p>What identification is needed, how registration details are issued, and which appointment types can actually be booked online.</p></article>
     </div></section>
-    <section class="section"><div class="container section-heading"><div><h2>A simpler registration explanation</h2><p class="section-intro">Even if the operational process stays the same, the experience of understanding it can feel dramatically more modern.</p></div></div><div class="container steps-grid">
-      <article class="step-card"><div class="icon-badge">1</div><h3>Request registration</h3><p>Offer a clean explanation of how to start, whether via a digital form, downloadable pack, or surgery collection, and what identification is needed.</p></article>
-      <article class="step-card"><div class="icon-badge">2</div><h3>Practice verification</h3><p>Make it explicit that the practice will verify the request and issue the details needed to activate the account.</p></article>
-      <article class="step-card"><div class="icon-badge">3</div><h3>Complete activation</h3><p>Show how the patient uses those codes in the app and what they can do once they are signed in.</p></article>
+    <section class="section"><div class="container section-heading"><div><h2>Getting started</h2><p class="section-intro">A better page tells patients the journey in three steps.</p></div></div><div class="container steps-grid">
+      <article class="step-card"><div class="icon-badge">1</div><h3>Request access</h3><p>Tell patients whether they need to contact reception, complete a form or collect details from the practice, and what ID to have ready.</p></article>
+      <article class="step-card"><div class="icon-badge">2</div><h3>Receive your registration details</h3><p>Set clear expectations about what the practice team will send and how long setup is likely to take.</p></article>
+      <article class="step-card"><div class="icon-badge">3</div><h3>Sign in and start using the service</h3><p>Show what patients can do after activation and where to get help if something does not work first time.</p></article>
     </div></section>
     <section class="section"><div class="container grid-2">
-      <article class="content-block"><span class="eyebrow">Reassurance</span><h2>Replace uncertainty with expectation-setting.</h2><ul><li>Tell patients what they need before they start.</li><li>Explain what the practice team will do after they submit registration.</li><li>Describe where to get help if they get stuck.</li><li>State clearly which appointment types are available online.</li></ul></article>
-      <article class="content-block"><span class="eyebrow">Prototype CTA area</span><h2>One clear next step is better than multiple scattered links.</h2><p>Patients should not need to puzzle out whether they need a Word document, a policy page, an app store link, or a phone call first. A refreshed page would guide them through that sequence more calmly.</p><div class="actions"><a class="btn btn-primary" href="contact.html">Get help with setup</a><a class="btn btn-secondary" href="appointments.html">Back to appointments</a></div></article>
+      <article class="content-block featured"><span class="eyebrow">Helpful information</span><h2>Replace uncertainty with reassurance.</h2><ul><li>Tell patients what they need before they begin.</li><li>Explain what happens after they submit a request.</li><li>Show where to get help with access issues.</li><li>Clarify which tasks are available online and which still need reception support.</li></ul></article>
+      <article class="content-block"><span class="eyebrow">Need help?</span><h2>One clear next step is better than a cluster of mixed links.</h2><p>If a patient is unsure whether they need a form, an app link or a phone call, the page is doing too little. This version guides them toward a single sensible next action.</p><div class="actions"><a class="btn btn-primary" href="contact.html">Get help with Patient Access</a><a class="btn btn-secondary" href="appointments.html">Back to appointments</a></div></article>
     </div></section>
-
   </main>
-
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <div class="brand-mark">
           <div class="brand-badge">I</div>
-          <div class="brand-copy">Indigo Medical <small>Refresh prototype and review pack</small></div>
+          <div class="brand-copy">Indigo Medical <small>Care that feels personal</small></div>
         </div>
-        <p>This prototype is a task-focused redesign concept based on Indigo Medical’s public site structure, intended to show how patient journeys could feel clearer, more modern, and more confidence-inspiring.</p>
+        <p>General practice and family medicine across Jersey, with clearer routes for appointments, prescriptions, registration and getting in touch.</p>
       </div>
       <div>
-        <strong>Patient journey pages</strong>
-        <ul><li><a href="index.html">Homepage</a></li><li><a href="appointments.html">Appointments</a></li><li><a href="patient-access.html">Patient Access</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register</a></li></ul>
+        <strong>Patient services</strong>
+        <ul><li><a href="appointments.html">Appointments</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register with us</a></li><li><a href="patient-access.html">Patient Access</a></li></ul>
       </div>
       <div>
-        <strong>Practice pages</strong>
-        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Surgeries</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
+        <strong>Practice information</strong>
+        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Our surgeries</a></li><li><a href="team.html">Medical team</a></li><li><a href="contact.html">Contact us</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
       </div>
     </div>
     <div class="container small-print">Exploratory concept only — not an official Indigo Medical website. Public information has been reorganised here for review and prototype purposes.</div>

@@ -3,26 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Appointments — Indigo Medical refresh prototype</title>
-  <meta name="description" content="A clearer appointment journey prototype for Indigo Medical.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <title>Appointments — Indigo Medical</title>
+  <meta name="description" content="Clear routine, urgent, online and out-of-hours appointment routes for Indigo Medical patients.">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-links">
+        <span>Call: <a href="tel:01534730541">01534 730541</a></span>
+        <span>Email: <a href="mailto:indigomedical@indigo.gpnet.je">indigomedical@indigo.gpnet.je</a></span>
+      </div>
+      <div class="utility-note">Urgent help when closed: JDOC <strong>01534 445445</strong></div>
+    </div>
+  </div>
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand-mark" href="index.html" aria-label="Indigo Medical prototype home">
+      <a class="brand-mark" href="index.html" aria-label="Indigo Medical home">
         <div class="brand-badge">I</div>
-        <div class="brand-copy">Indigo Medical <small>Appointments prototype</small></div>
+        <div class="brand-copy">Indigo Medical <small>Family medicine across Jersey</small></div>
       </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
-        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-        <a class="nav-cta" href="review.html">Review</a>
+        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="prescriptions.html">Prescriptions</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+        
       </nav>
     </div>
   </header>
@@ -30,49 +37,47 @@
     <section class="page-hero">
       <div class="container page-hero-card">
         <div class="breadcrumbs"><a href="index.html">Home</a> / <span>Appointments</span></div>
-        <span class="eyebrow">Appointments redesign</span>
-        <h1>Make the right appointment route clear in under ten seconds.</h1>
-        <p>Instead of asking patients to read policy-like paragraphs first, this page turns appointments into a simple decision structure: routine, urgent, online, or out-of-hours.</p>
-        <div class="callout alert">If the problem is life-threatening, call 999 immediately. If it is urgent and cannot wait for the next routine appointment, call the practice directly on 01534 730541.</div>
+        <span class="eyebrow">Appointments</span>
+        <h1>Appointments made simpler.</h1>
+        <p>Patients should be able to tell in seconds whether they need a routine appointment, urgent same-day advice, online access, or out-of-hours help.</p>
+        <div class="callout alert" id="urgent"><strong>Urgent guidance:</strong> If your problem is urgent and cannot wait for the next routine appointment, call the practice on 01534 730541. If the practice is closed and urgent help is needed, call JDOC on 01534 445445.</div>
       </div>
     </section>
     <section class="section">
-      <div class="container section-heading"><div><h2>Choose the route you need</h2><p class="section-intro">This is the highest-value change on the whole site: surfacing the correct next step before the policy detail.</p></div></div>
+      <div class="container section-heading"><div><h2>Choose the route you need</h2><p class="section-intro">The most useful appointment page is a decision surface, not a long policy note.</p></div></div>
       <div class="container grid-3">
-        <article class="action-card" id="routine"><div class="icon-badge">1</div><h3>Routine appointment</h3><p>For a standard GP or nurse appointment, call reception or visit the surgery. This route should be visible immediately, with no ambiguity about what patients do next.</p><div class="actions"><a class="btn btn-primary" href="contact.html">Contact reception</a></div></article>
-        <article class="action-card" id="urgent"><div class="icon-badge">2</div><h3>Urgent same-day care</h3><p>If a patient feels the issue cannot wait, they should be told clearly to call, explain the urgency, and expect triage or a call back from the practice team.</p><div class="actions"><a class="btn btn-primary" href="contact.html">See urgent guidance</a></div></article>
-        <article class="action-card"><div class="icon-badge">3</div><h3>Online booking</h3><p>Patients using Patient Access can be guided directly to the online route with a plain-English explanation of what is available and when.</p><div class="actions"><a class="btn btn-secondary" href="patient-access.html">Use Patient Access</a></div></article>
+        <article class="action-card"><div class="icon-badge">1</div><h3>Routine appointment</h3><p>For standard GP or nurse appointments, call reception or contact the practice during opening hours. Patients should be able to see this immediately from the top of the page.</p><div class="actions"><a class="btn btn-primary" href="contact.html">Contact reception</a></div></article>
+        <article class="action-card"><div class="icon-badge">2</div><h3>Urgent same-day advice</h3><p>If the problem cannot wait for the next routine appointment, patients should call the practice directly so the team can triage them appropriately.</p><div class="actions"><a class="btn btn-primary" href="tel:01534730541">Call 01534 730541</a></div></article>
+        <article class="action-card"><div class="icon-badge">3</div><h3>Online booking support</h3><p>Where Patient Access is available, explain clearly what can be booked online and what still needs a phone call or receptionist help.</p><div class="actions"><a class="btn btn-secondary" href="patient-access.html">Use Patient Access</a></div></article>
       </div>
     </section>
     <section class="section"><div class="container metrics">
-      <article class="metric-card"><h3>Routine consultations</h3><p>Explain simply that consultations may be in person or by telephone, and that the patient can indicate their preference at the point of booking.</p></article>
-      <article class="metric-card"><h3>Cancellation policy</h3><p>Keep cancellation expectations visible, short, and practical so the user understands how to release appointments back to the practice.</p></article>
-      <article class="metric-card"><h3>Home visits</h3><p>Clarify that home visits are for housebound or clinically appropriate cases, with a recommended call time if same-day review may be needed.</p></article>
-      <article class="metric-card"><h3>Out of hours</h3><p>Surface JDOC guidance higher up the page so patients do not have to hunt for it when anxious or unwell.</p></article>
+      <article class="metric-card"><h3>Telephone or in-person</h3><p>Explain whether appointments may be telephone, face to face or triaged, and help patients understand what to expect.</p></article>
+      <article class="metric-card"><h3>Home visits</h3><p>Clarify that home visits are usually for patients who are housebound or too unwell to travel, and encourage early calls where possible.</p></article>
+      <article class="metric-card"><h3>Changing or cancelling</h3><p>Keep cancellation guidance short and visible so unused appointments can be released back to the practice promptly.</p></article>
+      <article class="metric-card"><h3>Out of hours</h3><p>Place JDOC information high enough on the page to help anxious patients find the right next step when the surgery is closed.</p></article>
     </div></section>
     <section class="section"><div class="container grid-2">
-      <article class="content-block"><span class="eyebrow">What works better here</span><h2>Lead with action. Layer the detail underneath.</h2><p>Operational detail still matters, but it becomes more usable when patients see the route first and the supporting explanation second.</p><ul><li>Top of page: routine, urgent, online, and out-of-hours routes.</li><li>Mid-page: consultation formats, cancellations, home visits, same-day process.</li><li>Lower page: fuller policy detail if still required.</li></ul></article>
-      <article class="content-block"><span class="eyebrow">Example of sharper copy</span><h2>Use calmer, shorter language under pressure.</h2><p class="keyline">“If your problem is urgent and cannot wait for the next routine appointment, please call us on 01534 730541. Let our reception team know it is urgent so we can triage you appropriately.”</p><p>That is faster to absorb than a dense paragraph while preserving the same operational meaning.</p></article>
+      <article class="content-block featured"><span class="eyebrow">Why this structure works</span><h2>Action first, explanation second.</h2><p>Patients rarely arrive on an appointments page wanting a full explanation of policy. They usually want to know what to do next, how urgently to act, and whether they can do it online.</p><ul><li>Top of page: routine, urgent and out-of-hours routes.</li><li>Middle of page: booking format, visits and cancellations.</li><li>Lower on the page: operational detail and fuller notes if needed.</li></ul></article>
+      <article class="content-block"><span class="eyebrow">Recommended wording</span><h2>Shorter copy under pressure</h2><p class="keyline">If your problem is urgent and cannot wait for the next routine appointment, please call us on 01534 730541 and let the reception team know that it is urgent.</p><p>That is quicker to scan than a dense paragraph while preserving the same operational meaning.</p></article>
     </div></section>
-
   </main>
-
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <div class="brand-mark">
           <div class="brand-badge">I</div>
-          <div class="brand-copy">Indigo Medical <small>Refresh prototype and review pack</small></div>
+          <div class="brand-copy">Indigo Medical <small>Care that feels personal</small></div>
         </div>
-        <p>This prototype is a task-focused redesign concept based on Indigo Medical’s public site structure, intended to show how patient journeys could feel clearer, more modern, and more confidence-inspiring.</p>
+        <p>General practice and family medicine across Jersey, with clearer routes for appointments, prescriptions, registration and getting in touch.</p>
       </div>
       <div>
-        <strong>Patient journey pages</strong>
-        <ul><li><a href="index.html">Homepage</a></li><li><a href="appointments.html">Appointments</a></li><li><a href="patient-access.html">Patient Access</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register</a></li></ul>
+        <strong>Patient services</strong>
+        <ul><li><a href="appointments.html">Appointments</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register with us</a></li><li><a href="patient-access.html">Patient Access</a></li></ul>
       </div>
       <div>
-        <strong>Practice pages</strong>
-        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Surgeries</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
+        <strong>Practice information</strong>
+        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Our surgeries</a></li><li><a href="team.html">Medical team</a></li><li><a href="contact.html">Contact us</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
       </div>
     </div>
     <div class="container small-print">Exploratory concept only — not an official Indigo Medical website. Public information has been reorganised here for review and prototype purposes.</div>
