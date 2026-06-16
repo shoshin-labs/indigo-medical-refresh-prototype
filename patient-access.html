@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patient Access — Indigo Medical refresh prototype</title>
+  <meta name="description" content="Prototype of a simplified Patient Access onboarding page for Indigo Medical.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand-mark" href="index.html">
+        <div class="brand-badge">I</div>
+        <div class="brand-copy">Indigo Medical <small>Patient Access prototype</small></div>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="#how-it-works">How it works</a>
+        <a class="nav-cta" href="#register">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-card">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <span>Patient Access</span></div>
+        <span class="eyebrow">Online booking onboarding redesign</span>
+        <h1>Explain Patient Access like a service, not a policy document.</h1>
+        <p>The current journey can feel administrative. This prototype reframes it into a simple, visual setup path that tells patients what the app does, what they need, and what happens next.</p>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>What patients need to know first</h2>
+            <p class="section-intro">Before asking someone to register, answer the obvious questions up front.</p>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>What is it for?</h3>
+            <p>Book supported appointments, manage repeat prescriptions, and access health information more easily.</p>
+          </article>
+          <article class="card">
+            <h3>Who is it for?</h3>
+            <p>Existing patients who want a more convenient way to manage routine tasks online.</p>
+          </article>
+          <article class="card">
+            <h3>How long does setup take?</h3>
+            <p>Show a realistic expectation, such as a short registration process plus practice verification.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="register">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>A simpler step-by-step onboarding pattern</h2>
+            <p class="section-intro">Even if the operational requirements stay the same, the presentation can feel far more modern and manageable.</p>
+          </div>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <h3>Request registration</h3>
+            <p>Offer a clear digital form or downloadable pack, and state exactly what proof of identity is needed.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <h3>Receive your access details</h3>
+            <p>Explain that the practice will verify registration and send the details needed to activate the account.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <h3>Complete setup in the app</h3>
+            <p>Guide the patient through final activation and show what they can do once signed in.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <span class="eyebrow">Content improvement idea</span>
+          <h2>Replace uncertainty with reassurance</h2>
+          <ul class="contact-list">
+            <li><strong>What you need</strong><br>Photo ID and basic patient details.</li>
+            <li><strong>How long it may take</strong><br>Set expectations for verification and activation.</li>
+            <li><strong>Where to get help</strong><br>Give one clear route for setup support if patients get stuck.</li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <h2>Example CTA area</h2>
+          <p>Rather than sending patients into multiple paragraphs and document links immediately, start with a simple explanation and a single next step.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#register">Start registration</a>
+            <a class="btn btn-secondary" href="appointments.html">Back to appointments</a>
+          </div>
+          <p class="note">A later production version could offer a digital registration form or clearer instructions around the current offline verification process.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Prototype focus</strong><p>Simplify the online-booking explanation and reduce administrative friction.</p></div>
+      <div><strong>Pages</strong><ul><li><a href="index.html">Homepage</a></li><li><a href="appointments.html">Appointments</a></li></ul></div>
+      <div><strong>Docs</strong><ul><li><a href="docs/review-for-dr-rogers.md">Review</a></li><li><a href="docs/prioritised-improvement-list.md">Priorities</a></li></ul></div>
+    </div>
+    <div class="container small-print">Exploratory concept only — not an official Indigo Medical website.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
