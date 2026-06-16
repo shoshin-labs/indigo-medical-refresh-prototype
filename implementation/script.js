@@ -11,6 +11,6 @@ for (const form of document.querySelectorAll('[data-demo-form]')) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const status = form.querySelector('[data-form-status]');
-    if (status) status.textContent = 'Thank you. In a live version, your message would now be sent securely to the practice team.';
+    if (status) status.textContent = 'Thanks for your message. This preview form is not connected to the live practice inbox, so please phone or email the practice directly if you need a response.';
   });
 }

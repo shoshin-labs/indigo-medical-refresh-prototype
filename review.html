@@ -3,73 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website recommendations for Dr Ben Rogers — Indigo Medical</title>
+  <meta name="description" content="A review and recommendation report for Indigo Medical’s website, with priorities and prototype links.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>Review for Dr Rogers — Indigo Medical refresh concept</title>
-  <meta name="description" content="A presentation-ready review of website improvement priorities for Indigo Medical.">
+  <style>
+    :root {
+      --indigo:#373961;
+      --indigo-2:#2d2f52;
+      --lav:#f2f3fa;
+      --lav-2:#fafafe;
+      --pink:#c92c9d;
+      --pink-2:#ab0e7f;
+      --ink:#232338;
+      --muted:#666683;
+      --line:rgba(55,57,97,.12);
+      --max:1360px;
+      --shadow:0 24px 70px rgba(55,57,97,.12);
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,var(--lav-2) 100%);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    .container{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    .topbar{background:var(--indigo);color:#fff}
+    .topbar .container{display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:52px;flex-wrap:wrap;font-size:.95rem}
+    .masthead{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:50}
+    .masthead .container{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px}
+    .brand{display:flex;align-items:center;gap:18px}
+    .brand img{width:210px;height:auto}
+    .brand-copy small{display:block;color:var(--muted);font-size:.85rem;margin-top:2px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .nav a{padding:12px 15px;border-radius:999px;color:var(--indigo);font-weight:600}
+    .nav .cta{background:var(--pink);color:#fff}
+    .hero{padding:44px 0 26px}
+    .hero-grid,.grid-2,.grid-3,.impact-grid,.links-grid{display:grid;gap:24px}
+    .hero-grid{grid-template-columns:1.15fr .85fr;align-items:stretch}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3,.impact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .hero-card,.card,.quote,.score{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-card{padding:54px;position:relative;overflow:hidden}
+    .hero-card:after{content:"";position:absolute;right:-70px;top:-50px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(201,44,157,.16),transparent 70%)}
+    .eyebrow{display:inline-flex;padding:8px 14px;border-radius:999px;background:rgba(201,44,157,.1);color:var(--pink-2);font-weight:700;font-size:.84rem;letter-spacing:.01em}
+    h1,h2,h3{margin:0;color:var(--indigo);letter-spacing:-.03em}
+    h1{font-family:Newsreader,serif;font-size:clamp(3rem,6vw,5.1rem);line-height:.98;margin:18px 0 16px;max-width:10ch}
+    h2{font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:12px}
+    h3{font-size:1.3rem;margin-bottom:8px}
+    p{margin:0 0 14px}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:65ch}
+    .hero-side{display:grid;gap:20px}
+    .score{padding:26px}
+    .score strong{display:block;font-size:2rem;color:var(--indigo)}
+    .score span{color:var(--muted)}
+    .section{padding:28px 0}
+    .section-head{margin-bottom:18px}
+    .card{padding:30px}
+    .kicker{color:var(--pink-2);font-weight:700;font-size:.88rem;margin-bottom:8px}
+    .muted{color:var(--muted)}
+    ul{margin:0;padding-left:18px}
+    li+li{margin-top:10px}
+    .priority{display:flex;gap:14px;align-items:flex-start}
+    .priority-badge{min-width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--indigo);color:#fff;font-weight:800}
+    .quote{padding:34px 36px;background:linear-gradient(180deg,#fff 0%,#ffefff 100%);border-color:rgba(201,44,157,.2)}
+    .links-grid a{display:block;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+    .links-grid strong{display:block;color:var(--indigo);margin-bottom:6px}
+    .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .pill-row span{display:inline-flex;align-items:center;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--indigo)}
+    .report-footer{padding:40px 0 54px;color:var(--muted)}
+    .small{font-size:.95rem}
+    @media (max-width: 980px){.hero-grid,.grid-2,.grid-3,.impact-grid,.links-grid{grid-template-columns:1fr 1fr}.hero-grid{grid-template-columns:1fr}}
+    @media (max-width: 760px){.container{width:min(var(--max),calc(100% - 24px))}.masthead .container,.topbar .container{align-items:flex-start}.nav{display:none}.hero-card,.card,.quote,.score{padding:22px}.grid-2,.grid-3,.impact-grid,.links-grid{grid-template-columns:1fr}.brand img{width:180px}h1{max-width:100%}}
+  </style>
 </head>
 <body>
-  <div class="utility-bar">
-    <div class="container utility-inner">
-      <div class="utility-links">
-        <span>Call: <a href="tel:01534730541">01534 730541</a></span>
-        <span>Email: <a href="mailto:indigomedical@indigo.gpnet.je">indigomedical@indigo.gpnet.je</a></span>
-      </div>
-      <div class="utility-note">Urgent help when closed: JDOC <strong>01534 445445</strong></div>
-    </div>
-  </div>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand-mark" href="index.html" aria-label="Indigo Medical home">
-        <div class="brand-badge">I</div>
-        <div class="brand-copy">Indigo Medical <small>Family medicine across Jersey</small></div>
-      </a>
-      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
-        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="prescriptions.html">Prescriptions</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
-        <a class="nav-cta" href="review.html">Review</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="page-hero"><div class="container page-hero-card"><div class="breadcrumbs"><a href="index.html">Home</a> / <span>Review for Dr Rogers</span></div><span class="eyebrow">Review for Dr Rogers</span><h1>A clearer website rather than a louder one.</h1><p>This page summarises the main website opportunities for Indigo Medical and shows how the concept prototype responds — especially around appointments, contact routes and patient confidence.</p></div></section>
-    <section class="section"><div class="container review-grid">
-      <article class="review-card"><p class="kicker">What is already strong</p><h3>Trust and tone</h3><p>The current Indigo Medical site feels credible, established and reassuring. That warmth should be preserved.</p></article>
-      <article class="review-card"><p class="kicker">Main issue</p><h3>Task completion</h3><p>The site is stronger as an information source than as a task-completion tool. Patients often need to read too much before knowing what to do next.</p></article>
-      <article class="review-card"><p class="kicker">Highest-value opportunity</p><h3>Appointments and contact</h3><p>The biggest practical win is to make routine, urgent, online and out-of-hours routes much clearer and easier to act on.</p></article>
-    </div></section>
-    <section class="section"><div class="container grid-2">
-      <article class="content-block featured"><span class="eyebrow">Summary</span><h2>What the website should do better</h2><p>The strongest next step is not a complete rebrand. It is a patient-experience refresh: clearer calls to action, shorter copy in key places, more explicit contact pathways and a more polished explanation of digital services such as Patient Access.</p><p class="keyline">Keep the trust. Reduce the friction.</p></article>
-      <article class="content-block"><span class="eyebrow">What this concept shows</span><h2>How the prototype responds</h2><ul><li>Homepage reorganised around patient intent and practical tasks.</li><li>Appointments page rewritten as a decision surface rather than explanatory prose.</li><li>Patient Access page reframed as a simple, reassuring journey.</li><li>Contact page upgraded with clearer labels and safer routing guidance.</li><li>Services, surgeries and team pages given a calmer, more polished structure.</li></ul></article>
-    </div></section>
-    <section class="section"><div class="container timeline-grid">
-      <article class="timeline-card"><p class="kicker">Must</p><h3>Immediate priorities</h3><ul><li>Clarify the appointments journey.</li><li>Simplify or better explain online access.</li><li>Make contact routes explicit.</li><li>Improve forms and accessibility patterns.</li></ul></article>
-      <article class="timeline-card"><p class="kicker">Should</p><h3>Next refinements</h3><ul><li>Rebalance the homepage around booking and urgent guidance.</li><li>Strengthen mobile scanning and page hierarchy.</li><li>Add clearer expectations around response times.</li><li>Introduce more location-specific practical detail.</li></ul></article>
-    </div></section>
-    <section class="section"><div class="container quote-card"><span class="eyebrow">Overall recommendation</span><h2>The practice does not need to feel more branded. It needs to feel easier.</h2><p>A refresh centred on patient tasks, appointment clarity and calmer digital guidance would likely improve usability materially without losing the personal, trusted character already present in the practice brand.</p><div class="actions"><a class="btn btn-primary" href="index.html">View the concept homepage</a><a class="btn btn-secondary" href="appointments.html">Review the appointments page</a></div></div></section>
+  <div class="topbar"><div class="container"><div>Prepared for <strong>Dr Ben Rogers</strong></div><div>Indigo Medical website review • 16 June 2026</div></div></div>
+  <header class="masthead"><div class="container"><a class="brand" href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/"><img src="implementation/assets/logo.svg" alt="Indigo Medical"><div class="brand-copy"><strong>Website recommendations</strong><small>Patient experience, task clarity and implementation prototype</small></div></a><nav class="nav"><a href="#summary">Summary</a><a href="#priorities">Priorities</a><a href="#pages">Page recommendations</a><a href="#prototype">Prototype</a><a class="cta" href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/">Open prototype</a></nav></div></header>
+  <main>
+    <section class="hero"><div class="container hero-grid"><article class="hero-card"><span class="eyebrow">Executive summary</span><h1>A calmer, clearer website for patients.</h1><p class="lead">Indigo Medical already has credibility, warmth and strong branding. The main opportunity is not a visual rebrand. It is to make the site much easier for patients to use when they need to book, call, register, order repeat medication or understand where to go next.</p><p class="lead">In short: keep the trust, reduce the friction, and make the main tasks obvious within a few seconds of landing on the site.</p><div class="pill-row"><span>Appointments</span><span>Prescriptions</span><span>Patient Access</span><span>Registration</span><span>Contact routing</span><span>Locations and team</span></div></article><div class="hero-side"><div class="score"><div class="kicker">What is already working</div><strong>Trust &amp; tone</strong><span>The current site feels established, caring and professional. That should be preserved.</span></div><div class="score"><div class="kicker">Main friction</div><strong>Task completion</strong><span>Patients often have to read too much before knowing what to click, who to call or which route applies.</span></div><div class="score"><div class="kicker">Recommendation</div><strong>Refresh, not rebrand</strong><span>Improve hierarchy, copy, contact routes and page structure without losing Indigo Medical’s existing personality.</span></div></div></div></section>
+
+    <section class="section" id="summary"><div class="container grid-2"><article class="card"><div class="kicker">Overall diagnosis</div><h2>The website is stronger as an information source than a task tool.</h2><p class="muted">A patient usually arrives with a job to do: book, ask, register, request, find, or check. On the current site those tasks are present, but key routes are diluted by long explanatory copy, repeated sections and weak distinctions between urgent, routine and administrative journeys.</p><p class="muted">This especially affects appointments, contact and digital self-service.</p></article><article class="card"><div class="kicker">Best outcome</div><h2>Make the most important actions unmistakable.</h2><p class="muted">The homepage and service pages should orient patients quickly, then let them click straight into the right route. Each key page should answer three questions immediately:</p><ul><li>What is this page for?</li><li>What should I do next?</li><li>What if my situation is urgent or different?</li></ul></article></div></section>
+
+    <section class="section" id="priorities"><div class="container section-head"><h2>Priority recommendations</h2><p class="muted">These are ordered by likely value to patients and by how much they improve day-to-day usability without requiring a full rebuild.</p></div><div class="container impact-grid"><article class="card priority"><div class="priority-badge">1</div><div><div class="kicker">Highest priority</div><h3>Clarify appointments and urgent routing</h3><p class="muted">Make routine appointments, urgent same-day advice, online access and out-of-hours help visibly different paths. Patients should not need to interpret paragraphs to know what to do.</p></div></article><article class="card priority"><div class="priority-badge">2</div><div><div class="kicker">High priority</div><h3>Separate contact routes more clearly</h3><p class="muted">The site should guide patients to phone for urgent or clinical issues, while keeping forms and email for non-urgent administrative questions.</p></div></article><article class="card priority"><div class="priority-badge">3</div><div><div class="kicker">High priority</div><h3>Make Patient Access and prescriptions easier to understand</h3><p class="muted">Online access is valuable, but the current journey asks patients to work too hard to understand what it does, how to get it and when to use it.</p></div></article><article class="card priority"><div class="priority-badge">4</div><div><div class="kicker">Medium priority</div><h3>Improve scanning on services, surgeries and team pages</h3><p class="muted">These pages contain useful information but can feel dense or generic. They should be reorganised for faster reading and more practical decision-making.</p></div></article><article class="card priority"><div class="priority-badge">5</div><div><div class="kicker">Medium priority</div><h3>Strengthen mobile hierarchy and whitespace</h3><p class="muted">Small structural changes to spacing, card treatment and call-to-action placement will help the site feel calmer and more premium without becoming flashy.</p></div></article><article class="card priority"><div class="priority-badge">6</div><div><div class="kicker">Next step</div><h3>Connect forms and pathways cleanly in production</h3><p class="muted">Once content and structure are agreed, the remaining value comes from wiring forms, online services and booking routes into a secure live implementation.</p></div></article></div></section>
+
+    <section class="section" id="pages"><div class="container section-head"><h2>Page-by-page recommendations</h2><p class="muted">Recommendations below are qualitative, based on reviewing the public site and then building a working static implementation to test the improvements in context.</p></div><div class="container grid-2"><article class="card"><div class="kicker">Homepage</div><h3>Lead with tasks, not general explanation</h3><ul><li>Surface the most common patient tasks immediately.</li><li>Make appointments, prescriptions, registration and Patient Access visible above the fold.</li><li>Reduce duplicate explanatory sections and keep the homepage focused on orientation.</li></ul></article><article class="card"><div class="kicker">Appointments</div><h3>Turn the page into a decision surface</h3><ul><li>Split routine, urgent, online and out-of-hours routes clearly.</li><li>Make the phone route prominent for same-day urgent problems.</li><li>Keep supporting detail below the main actions rather than before them.</li></ul></article><article class="card"><div class="kicker">Prescriptions &amp; Patient Access</div><h3>Explain digital self-service in plain English</h3><ul><li>Show exactly when to use Patient Access.</li><li>Make repeat prescriptions the simplest route on the page.</li><li>Explain medication reviews and help routes without jargon.</li></ul></article><article class="card"><div class="kicker">Registration &amp; contact</div><h3>Reduce uncertainty before people call reception</h3><ul><li>Tell patients what they need before they start.</li><li>Make response routes and expectations clearer.</li><li>Use forms for non-urgent admin only, with strong warnings for urgent issues.</li></ul></article><article class="card"><div class="kicker">Services &amp; surgeries</div><h3>Make practical information easier to scan</h3><ul><li>Group services by patient need and keep descriptions short.</li><li>Highlight real-world details like opening times, parking and which surgery to use.</li><li>Use strong subheads so visitors can skim with confidence.</li></ul></article><article class="card"><div class="kicker">Medical team</div><h3>Add reassurance through people and specialties</h3><ul><li>Show named clinicians in a cleaner structure.</li><li>Use specialties to help patients understand the breadth of the practice.</li><li>Keep biographies concise and booking-focused rather than overwhelming.</li></ul></article></div></section>
+
+    <section class="section"><div class="container quote"><div class="kicker">Key recommendation</div><h2>The practice does not need to feel more branded. It needs to feel easier.</h2><p class="muted">The strongest route forward is a usability-led refresh: better hierarchy, cleaner calls to action, shorter copy, stronger urgent/routine distinctions and more practical page structures. That can materially improve patient experience without losing the warmth and trust already present in the Indigo Medical brand.</p></div></section>
+
+    <section class="section" id="prototype"><div class="container section-head"><h2>Prototype pages now built</h2><p class="muted">To make the recommendations concrete, a working implementation prototype has been built using Indigo Medical’s existing visual language, logo and public information.</p></div><div class="container links-grid grid-3"><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/"><strong>Homepage</strong><span class="muted">Task-led landing page with clearer patient routes.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/appointments.html"><strong>Appointments</strong><span class="muted">Routine, urgent, online and out-of-hours routes split clearly.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/prescriptions.html"><strong>Prescriptions</strong><span class="muted">Repeat medication, reviews and queries made easier to act on.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/patient-access.html"><strong>Patient Access</strong><span class="muted">Cleaner explanation of online access and setup.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/register.html"><strong>Registration</strong><span class="muted">Clearer onboarding for new patients.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/contact.html"><strong>Contact</strong><span class="muted">Safer route separation between urgent and non-urgent enquiries.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/services.html"><strong>Services</strong><span class="muted">Grouped service overview with faster scanning.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/surgeries.html"><strong>Our surgeries</strong><span class="muted">More practical location, hours and access details.</span></a><a href="https://shoshin-labs.github.io/indigo-medical-refresh-prototype/implementation/team.html"><strong>Medical team</strong><span class="muted">Named clinicians and specialties presented more clearly.</span></a></div></section>
+
+    <section class="section"><div class="container grid-2"><article class="card"><div class="kicker">Suggested rollout</div><h2>Recommended sequence</h2><ul><li>Agree the patient-task structure and page priorities.</li><li>Approve the content direction for the key high-traffic pages.</li><li>Translate the approved prototype into the live CMS/build stack.</li><li>Connect secure forms, Patient Access pathways and any booking integrations.</li><li>Run a final mobile and accessibility pass before launch.</li></ul></article><article class="card"><div class="kicker">Evidence note</div><h2>How to strengthen this further</h2><ul><li>Review analytics for top-traffic pages and common drop-off points.</li><li>Listen to reception pain points: what patients most often ask because the site was unclear.</li><li>Run quick patient testing on appointments, prescriptions and contact routes.</li><li>Use those findings to refine wording, labels and CTAs before launch.</li></ul><p class="small muted">This report is based on qualitative review and prototype work rather than analytics or formal usability testing.</p></article></div></section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand-mark">
-          <div class="brand-badge">I</div>
-          <div class="brand-copy">Indigo Medical <small>Care that feels personal</small></div>
-        </div>
-        <p>General practice and family medicine across Jersey, with clearer routes for appointments, prescriptions, registration and getting in touch.</p>
-      </div>
-      <div>
-        <strong>Patient services</strong>
-        <ul><li><a href="appointments.html">Appointments</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register with us</a></li><li><a href="patient-access.html">Patient Access</a></li></ul>
-      </div>
-      <div>
-        <strong>Practice information</strong>
-        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Our surgeries</a></li><li><a href="team.html">Medical team</a></li><li><a href="contact.html">Contact us</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
-      </div>
-    </div>
-    <div class="container small-print">Exploratory concept only — not an official Indigo Medical website. Public information has been reorganised here for review and prototype purposes.</div>
-  </footer>
-  <script src="script.js"></script>
+  <footer class="report-footer"><div class="container"><p><strong>Prepared for Dr Ben Rogers</strong> • Indigo Medical website review • 16 June 2026</p><p class="small">Prototype links use Indigo Medical’s public branding and public information for review purposes only.</p></div></footer>
 </body>
 </html>
