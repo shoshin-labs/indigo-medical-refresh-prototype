@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Indigo Medical refresh prototype</title>
+  <meta name="description" content="A clearer contact route concept for Indigo Medical.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand-mark" href="index.html" aria-label="Indigo Medical prototype home">
+        <div class="brand-badge">I</div>
+        <div class="brand-copy">Indigo Medical <small>Contact prototype</small></div>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
+        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+        <a class="nav-cta" href="review.html">Review</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero"><div class="container page-hero-card"><div class="breadcrumbs"><a href="index.html">Home</a> / <span>Contact</span></div><span class="eyebrow">Contact page refresh</span><h1>Make the right contact route obvious before the patient writes anything.</h1><p>This concept separates urgent medical needs from administrative enquiries, adds visible form labels, and makes the practice’s direct contact details easier to trust and use.</p></div></section>
+    <section class="section"><div class="container contact-grid">
+      <article class="contact-card"><span class="eyebrow">Contact guidance</span><h2>Use the form for admin. Use the phone for urgent care.</h2><ul class="list-clean"><li><strong>Routine appointment queries</strong><br>Use the appointments route or call reception on 01534 730541.</li><li><strong>Urgent same-day problems</strong><br>Call the practice directly and do not use the form.</li><li><strong>General admin queries</strong><br>Use the form or email for non-urgent questions.</li><li><strong>Out of hours support</strong><br>Call 01534 445445 when the practice is closed and urgent help is needed.</li></ul><div class="fact-pills"><span>01534 730541</span><span>indigomedical@indigo.gpnet.je</span><span>JDOC 01534 445445</span></div></article>
+      <article class="contact-card"><h2>General enquiry form</h2><p class="note">Demo only. This version shows how labels, intent, and response expectations can feel more professional and accessible.</p><form data-demo-form><div class="form-grid"><div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required></div><div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="01534 123456" required></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required></div><div class="field"><label for="topic">Enquiry type</label><select id="topic" name="topic"><option>General enquiry</option><option>Registration question</option><option>Patient Access help</option><option>Billing question</option></select></div><div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Please do not include urgent or sensitive medical details here."></textarea></div></div><p class="note">If your query is urgent, please phone the practice instead of submitting this form.</p><div class="actions"><button class="btn btn-primary" type="submit">Send enquiry</button></div><p class="note" data-form-status aria-live="polite"></p></form></article>
+    </div></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-mark">
+          <div class="brand-badge">I</div>
+          <div class="brand-copy">Indigo Medical <small>Refresh prototype and review pack</small></div>
+        </div>
+        <p>This prototype is a task-focused redesign concept based on Indigo Medical’s public site structure, intended to show how patient journeys could feel clearer, more modern, and more confidence-inspiring.</p>
+      </div>
+      <div>
+        <strong>Patient journey pages</strong>
+        <ul><li><a href="index.html">Homepage</a></li><li><a href="appointments.html">Appointments</a></li><li><a href="patient-access.html">Patient Access</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register</a></li></ul>
+      </div>
+      <div>
+        <strong>Practice pages</strong>
+        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Surgeries</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
+      </div>
+    </div>
+    <div class="container small-print">Exploratory concept only — not an official Indigo Medical website. Public information has been reorganised here for review and prototype purposes.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

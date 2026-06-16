@@ -3,184 +3,165 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Indigo Medical — refreshed homepage prototype</title>
-  <meta name="description" content="Prototype of a refreshed Indigo Medical homepage focused on clearer patient journeys.">
+  <title>Indigo Medical — refreshed full-site prototype</title>
+  <meta name="description" content="Presentation-ready Indigo Medical refresh prototype focused on clearer patient journeys.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container header-row">
       <a class="brand-mark" href="index.html" aria-label="Indigo Medical prototype home">
         <div class="brand-badge">I</div>
-        <div class="brand-copy">Indigo Medical <small>Refresh concept</small></div>
+        <div class="brand-copy">Indigo Medical <small>Full-site prototype</small></div>
       </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="nav-links" data-nav-links aria-label="Primary navigation">
-        <a href="appointments.html">Appointments</a>
-        <a href="patient-access.html">Patient Access</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="appointments.html#book-now">Book an appointment</a>
+        <a href="appointments.html">Appointments</a><a href="patient-access.html">Patient Access</a><a href="services.html">Services</a><a href="surgeries.html">Surgeries</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+        <a class="nav-cta" href="review.html">Review</a>
       </nav>
     </div>
   </header>
-
   <main id="main">
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">A clearer, more patient-task-led homepage</span>
-          <h1>Helping patients get to the right next step faster.</h1>
-          <p>This concept keeps Indigo Medical’s calm, trusted tone, but reshapes the site around what patients most often need to do: book, ask, register, and get urgent help without confusion.</p>
+        <div class="hero-card">
+          <span class="eyebrow">Presentation-ready redesign direction</span>
+          <h1>Designed around what patients need to do today.</h1>
+          <p class="lead">This sharper concept keeps Indigo Medical’s reassuring tone but reorganises the experience around practical actions: booking, urgent guidance, prescriptions, registration, and knowing which surgery or team route is right.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="appointments.html#book-now">Book an appointment</a>
-            <a class="btn btn-secondary" href="patient-access.html">Use Patient Access</a>
+            <a class="btn btn-primary" href="appointments.html">Book an appointment</a>
+            <a class="btn btn-secondary" href="review.html">Read the review for Dr Rogers</a>
           </div>
           <div class="meta-row">
-            <span>Routine appointments</span>
-            <span>Urgent same-day guidance</span>
-            <span>Clearer online booking setup</span>
+            <span>Routine care made easier to navigate</span>
+            <span>Urgent vs non-urgent routes made clearer</span>
+            <span>Modernised Patient Access explanation</span>
           </div>
-          <div class="highlight-bar">Design intent: reduce reading, increase clarity, and make urgent vs routine pathways obvious at a glance.</div>
+          <div class="callout">Design principle: reduce reading, increase certainty, and make the next step obvious within the first screen.</div>
+          <div class="data-strip">
+            <div class="data-chip"><strong>1</strong> primary homepage goal: appointments first.</div>
+            <div class="data-chip"><strong>4</strong> patient decision routes surfaced early.</div>
+            <div class="data-chip"><strong>1</strong> calmer, more polished design system across the whole site.</div>
+          </div>
         </div>
-        <aside class="hero-panel" aria-label="Quick patient routes">
+        <aside class="panel hero-sidebar" aria-label="Quick patient routes">
           <div class="panel-title">What do you need today?</div>
-          <a class="route-card" href="appointments.html#routine">
+          <a class="route-card" href="appointments.html">
             <strong>Routine appointment</strong>
-            <small>Book or request a standard GP or nurse appointment.</small>
+            <small>Book or request a standard GP or nurse appointment without digging through paragraphs first.</small>
           </a>
-          <a class="route-card urgent" href="appointments.html#urgent">
+          <a class="route-card warning" href="appointments.html#urgent">
             <strong>Urgent same-day help</strong>
-            <small>Clear instructions for when you need help today.</small>
+            <small>Make the urgent pathway immediately clear, with guidance to call rather than use a form.</small>
+          </a>
+          <a class="route-card" href="prescriptions.html">
+            <strong>Prescriptions</strong>
+            <small>Separate new prescriptions, repeat prescriptions, and online options clearly.</small>
           </a>
           <a class="route-card" href="patient-access.html">
-            <strong>Online booking</strong>
-            <small>See a simple explanation of Patient Access and how to get started.</small>
+            <strong>Patient Access</strong>
+            <small>Explain online booking like a service, not an administrative maze.</small>
           </a>
-          <a class="route-card" href="#contact">
-            <strong>General enquiry</strong>
-            <small>Ask an admin question without mixing it up with urgent care.</small>
+          <a class="route-card" href="contact.html">
+            <strong>Contact the practice</strong>
+            <small>Route admin queries safely and explain what the form should and should not be used for.</small>
           </a>
         </aside>
       </div>
     </section>
 
-    <section class="quick-links">
-      <div class="container quick-links-grid">
-        <div class="metric-card">
-          <h3>Book</h3>
-          <p><strong>Primary action first.</strong> Appointment booking becomes the strongest visual route on the page.</p>
-        </div>
-        <div class="metric-card">
-          <h3>Understand</h3>
-          <p><strong>Less buried prose.</strong> Key patient choices are rewritten as simple cards and decision points.</p>
-        </div>
-        <div class="metric-card">
-          <h3>Act</h3>
-          <p><strong>Clear contact choices.</strong> Routine, urgent, online, and admin routes are separated.</p>
-        </div>
-        <div class="metric-card">
-          <h3>Trust</h3>
-          <p><strong>Accessible patterns.</strong> Visible labels, clearer hierarchy, and stronger reassurance.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
+    <section class="section">
       <div class="container">
         <div class="section-heading">
           <div>
-            <h2>Homepage priorities in this refresh</h2>
-            <p class="section-intro">The point is not to add more content. It is to organise existing services around patient intent.</p>
+            <h2>What changes in this refreshed approach</h2>
+            <p class="section-intro">The site becomes less of a brochure and more of a practical, patient-task-led service surface.</p>
           </div>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>1. Make appointments obvious</h3>
-            <p>Promote appointment booking above everything else, with direct routes for routine, urgent, and out-of-hours support.</p>
+        <div class="metrics">
+          <article class="metric-card">
+            <div class="icon-badge">A</div>
+            <h3>Appointments become the lead action</h3>
+            <p>The homepage no longer gives every route equal visual weight. The most common patient need leads the experience.</p>
           </article>
-          <article class="card">
-            <h3>2. Keep the reassuring tone</h3>
-            <p>Maintain the practice’s warm, clinically trustworthy feel, but remove the need to scan long paragraphs for practical instructions.</p>
+          <article class="metric-card">
+            <div class="icon-badge">U</div>
+            <h3>Urgent guidance becomes more explicit</h3>
+            <p>Patients are told early what counts as urgent, what to do on the day, and when to phone immediately.</p>
           </article>
-          <article class="card">
-            <h3>3. Reduce avoidable contact friction</h3>
-            <p>Show what the contact form is for, what it is not for, and when the patient should phone instead.</p>
+          <article class="metric-card">
+            <div class="icon-badge">C</div>
+            <h3>Contact routes are easier to trust</h3>
+            <p>Visible labels, clearer purpose, and response expectations make the contact experience feel safer and more modern.</p>
+          </article>
+          <article class="metric-card">
+            <div class="icon-badge">P</div>
+            <h3>Practice information is still easy to find</h3>
+            <p>Services, surgeries, team details, and registration remain prominent — just better organised around user intent.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="info-block">
-          <span class="eyebrow">Example hero message</span>
-          <h2>Care that feels personal, with a website that feels clearer.</h2>
-          <p>A refreshed Indigo Medical site could still speak in a calm, premium, patient-centred voice — while making actions more immediate. This block shows a more modern hierarchy without losing the practice’s reassuring tone.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="appointments.html">View appointments page prototype</a>
-            <a class="btn btn-secondary" href="patient-access.html">View Patient Access prototype</a>
-          </div>
+      <div class="container grid-3">
+        <article class="service-card">
+          <p class="kicker">Patients</p>
+          <h3>Clearer patient tasks</h3>
+          <p>Appointments, prescriptions, registration, and Patient Access are grouped as practical tasks, not scattered as equal-weight homepage boxes.</p>
+          <div class="actions"><a class="btn btn-secondary" href="appointments.html">See patient journeys</a></div>
+        </article>
+        <article class="service-card">
+          <p class="kicker">Services</p>
+          <h3>Service breadth with less clutter</h3>
+          <p>Core services are surfaced as a scannable set, with specialist care clearly linked from a cleaner services overview page.</p>
+          <div class="actions"><a class="btn btn-secondary" href="services.html">View services page</a></div>
+        </article>
+        <article class="service-card">
+          <p class="kicker">Practice</p>
+          <h3>Better reassurance and credibility</h3>
+          <p>Location details, opening times, surgery options, and team structure feel more complete when presented as practical information rather than hidden lower-page content.</p>
+          <div class="actions"><a class="btn btn-secondary" href="surgeries.html">View surgeries page</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-block">
+        <span class="eyebrow">Example homepage message</span>
+        <h2>Care that feels personal — with a website that feels easier.</h2>
+        <p>Indigo Medical already presents as clinically reassuring. The opportunity is not to reinvent the brand, but to modernise how it helps patients complete important tasks. A lighter editorial hierarchy, stronger calls to action, and cleaner content structure lift confidence without losing warmth.</p>
+        <div class="fact-pills">
+          <span>Trusted tone retained</span>
+          <span>Sharper visual hierarchy</span>
+          <span>Improved accessibility patterns</span>
+          <span>Better mobile scanning</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-card">
-          <span class="eyebrow">Contact concept</span>
-          <h2>Make the right contact route obvious</h2>
-          <p>Rather than saying patients can “complete the form or email” without showing a clear route, this concept separates contact types and adds expectations.</p>
-          <ul class="contact-list">
-            <li><strong>Routine appointment queries</strong><br>Use the appointments route or phone reception.</li>
-            <li><strong>Urgent medical problems</strong><br>Call the practice directly. Do not use the form.</li>
-            <li><strong>Admin questions</strong><br>Use the contact form for non-urgent administrative queries.</li>
-          </ul>
-        </div>
-        <div class="contact-card">
-          <h2>General enquiry form</h2>
-          <p class="form-help">Demo only. Visible labels and clearer purpose improve usability and accessibility.</p>
-          <form data-demo-form>
-            <div class="form-grid">
-              <div class="field">
-                <label for="name">Full name</label>
-                <input id="name" name="name" type="text" placeholder="Jane Smith" required>
-              </div>
-              <div class="field">
-                <label for="phone">Phone number</label>
-                <input id="phone" name="phone" type="tel" placeholder="01534 123456" required>
-              </div>
-              <div class="field">
-                <label for="email">Email address</label>
-                <input id="email" name="email" type="email" placeholder="jane@example.com" required>
-              </div>
-              <div class="field">
-                <label for="topic">Enquiry type</label>
-                <select id="topic" name="topic">
-                  <option>General enquiry</option>
-                  <option>Registration query</option>
-                  <option>Billing query</option>
-                  <option>Patient Access help</option>
-                </select>
-              </div>
-              <div class="field full">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Please do not include urgent or sensitive medical information in this form."></textarea>
-              </div>
-            </div>
-            <p class="form-help">For urgent clinical issues, please phone the practice instead of using this form.</p>
-            <div class="actions">
-              <button class="btn btn-primary" type="submit">Send enquiry</button>
-            </div>
-            <p class="form-help" data-form-status aria-live="polite"></p>
-          </form>
+    <section class="section">
+      <div class="container section-heading">
+        <div>
+          <h2>Preview the fuller site content</h2>
+          <p class="section-intro">This expanded prototype now includes the main patient and practice sections as a joined-up site concept.</p>
         </div>
       </div>
+      <div class="container services-grid">
+        <article class="service-card"><h3>Appointments</h3><p>Routine, urgent, online, and out-of-hours routes clarified up front.</p><div class="actions"><a class="btn btn-secondary" href="appointments.html">Open page</a></div></article>
+        <article class="service-card"><h3>Prescriptions</h3><p>New prescriptions, repeat prescriptions, and digital support made easier to understand.</p><div class="actions"><a class="btn btn-secondary" href="prescriptions.html">Open page</a></div></article>
+        <article class="service-card"><h3>Register with us</h3><p>A cleaner explanation of how patients join the practice and what to expect.</p><div class="actions"><a class="btn btn-secondary" href="register.html">Open page</a></div></article>
+        <article class="service-card"><h3>Patient Access</h3><p>A more human explanation of online registration and booking benefits.</p><div class="actions"><a class="btn btn-secondary" href="patient-access.html">Open page</a></div></article>
+        <article class="service-card"><h3>Services</h3><p>Core general practice and specialist services gathered into a more scannable overview.</p><div class="actions"><a class="btn btn-secondary" href="services.html">Open page</a></div></article>
+        <article class="service-card"><h3>Surgeries and team</h3><p>Location, opening, and team structure pages help patients orient themselves more quickly.</p><div class="actions"><a class="btn btn-secondary" href="team.html">Open team page</a></div></article>
+      </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -188,29 +169,21 @@
       <div>
         <div class="brand-mark">
           <div class="brand-badge">I</div>
-          <div class="brand-copy">Indigo Medical <small>Prototype website refresh</small></div>
+          <div class="brand-copy">Indigo Medical <small>Refresh prototype and review pack</small></div>
         </div>
-        <p>This prototype is intended to demonstrate structure, hierarchy, and clearer patient journeys.</p>
+        <p>This prototype is a task-focused redesign concept based on Indigo Medical’s public site structure, intended to show how patient journeys could feel clearer, more modern, and more confidence-inspiring.</p>
       </div>
       <div>
-        <strong>Prototype pages</strong>
-        <ul>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="appointments.html">Appointments</a></li>
-          <li><a href="patient-access.html">Patient Access</a></li>
-        </ul>
+        <strong>Patient journey pages</strong>
+        <ul><li><a href="index.html">Homepage</a></li><li><a href="appointments.html">Appointments</a></li><li><a href="patient-access.html">Patient Access</a></li><li><a href="prescriptions.html">Prescriptions</a></li><li><a href="register.html">Register</a></li></ul>
       </div>
       <div>
-        <strong>Review documents</strong>
-        <ul>
-          <li><a href="docs/review-for-dr-rogers.md">Short review</a></li>
-          <li><a href="docs/prioritised-improvement-list.md">Prioritised list</a></li>
-        </ul>
+        <strong>Practice pages</strong>
+        <ul><li><a href="services.html">Services</a></li><li><a href="surgeries.html">Surgeries</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li><li><a href="review.html">Review for Dr Rogers</a></li></ul>
       </div>
     </div>
-    <div class="container small-print">Exploratory concept only — not an official Indigo Medical website.</div>
+    <div class="container small-print">Exploratory concept only — not an official Indigo Medical website. Public information has been reorganised here for review and prototype purposes.</div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
