@@ -15,7 +15,7 @@
   --radius-lg: 22px;
   --radius-md: 16px;
   --shadow: 0 24px 60px rgba(55,57,97,0.12);
-  --max: 1180px;
+  --max: 1360px;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -29,7 +29,7 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display:block; max-width:100%; }
 button, input, textarea, select { font: inherit; }
-.container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+.container { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
 .skip-link { position:absolute; left:12px; top:-100px; background:var(--indigo); color:#fff; padding:10px 14px; border-radius:999px; z-index:99; }
 .skip-link:focus { top: 12px; }
 .utility-bar {
@@ -64,7 +64,7 @@ button, input, textarea, select { font: inherit; }
 .hero-grid, .grid-2, .grid-3, .contact-grid, .surgery-grid, .stats-grid, .info-grid, .steps-grid, .feature-grid, .footer-grid {
   display:grid; gap:24px;
 }
-.hero-grid { grid-template-columns: 1.2fr .8fr; align-items:stretch; }
+.hero-grid { grid-template-columns: 1.28fr .72fr; align-items:stretch; }
 .grid-2, .contact-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .grid-3, .feature-grid, .info-grid, .steps-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .stats-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
@@ -73,7 +73,7 @@ button, input, textarea, select { font: inherit; }
 .hero-copy {
   background: linear-gradient(135deg, var(--lavender) 0%, #ffffff 100%);
   border-radius: var(--radius-xl);
-  padding: 48px;
+  padding: 56px;
   box-shadow: var(--shadow);
   position:relative;
   overflow:hidden;
@@ -113,7 +113,7 @@ button, input, textarea, select { font: inherit; }
 .panel, .card, .contact-card, .surgery-card, .list-card, .image-card, .page-hero, .quote-card {
   background:#fff; border:1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow);
 }
-.panel, .card, .contact-card, .surgery-card, .list-card, .quote-card { padding: 26px; }
+.panel, .card, .contact-card, .surgery-card, .list-card, .quote-card { padding: 30px; }
 .panel-title, .card h3, .contact-card h2, .surgery-card h3 { color: var(--indigo); margin:0 0 10px; }
 .quick-route {
   display:grid; gap:8px; padding:18px; border-radius:18px; background:var(--lavender); border:1px solid rgba(55,57,97,0.08);
@@ -160,7 +160,7 @@ input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-
   .hero-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 760px) {
-  .container { width: min(var(--max), calc(100% - 22px)); }
+  .container { width: min(var(--max), calc(100% - 24px)); }
   .nav-toggle { display:inline-flex; align-items:center; justify-content:center; }
   .nav-links {
     position:absolute; left:11px; right:11px; top:calc(100% + 8px); display:none; flex-direction:column; align-items:stretch; padding:14px;
